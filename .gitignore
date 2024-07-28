@@ -1,0 +1,17 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/OlymppMarketsAPI/bin/Debug/net8.0
+/OlymppMarketsAPI/obj
+/OlymppMarketsAPI.Application/bin/Debug/net8.0
+/OlymppMarketsAPI.Application/obj
+/OlymppMarketsAPI.Domain/bin/Debug/net8.0
+/OlymppMarketsAPI.Domain/obj
+/OlymppMarketsAPI.DTOs/bin/Debug/net8.0
+/OlymppMarketsAPI.DTOs/obj
+/OlymppMarketsAPI.Infrastructure/bin/Debug/net8.0
+/OlymppMarketsAPI.Infrastructure/obj
+/OlymppMarketsAPI.Tests/bin/Debug/net8.0
+/OlymppMarketsAPI.Tests/obj
