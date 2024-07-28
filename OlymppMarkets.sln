@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OlymppMarketsAPI", "OlymppMarketsAPI\OlymppMarketsAPI.csproj", "{C8CCAF3C-D5E5-46E5-9883-D5C30342C357}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OlymppMarketsAPI.Domain", "OlymppMarketsAPI.Domain\OlymppMarketsAPI.Domain.csproj", "{9C93ED21-ADB6-4590-8C91-457523A7988F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OlymppMarketsAPI.Application", "OlymppMarketsAPI.Application\OlymppMarketsAPI.Application.csproj", "{AA3EB0F2-185F-4867-B480-C65D1999291D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OlymppMarketsAPI.Infrastructure", "OlymppMarketsAPI.Infrastructure\OlymppMarketsAPI.Infrastructure.csproj", "{545B6D09-100D-49A7-9ECC-8BF910705D8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OlymppMarketsAPI.DTOs", "OlymppMarketsAPI.DTOs\OlymppMarketsAPI.DTOs.csproj", "{C0C30856-13D8-438E-85D0-CD553E7AABC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OlymppMarketsAPI.Tests", "OlymppMarketsAPI.Tests\OlymppMarketsAPI.Tests.csproj", "{29B3E8FD-CF57-4E8A-8756-30ECA81801A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8CCAF3C-D5E5-46E5-9883-D5C30342C357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8CCAF3C-D5E5-46E5-9883-D5C30342C357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8CCAF3C-D5E5-46E5-9883-D5C30342C357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8CCAF3C-D5E5-46E5-9883-D5C30342C357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C93ED21-ADB6-4590-8C91-457523A7988F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C93ED21-ADB6-4590-8C91-457523A7988F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C93ED21-ADB6-4590-8C91-457523A7988F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C93ED21-ADB6-4590-8C91-457523A7988F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3EB0F2-185F-4867-B480-C65D1999291D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3EB0F2-185F-4867-B480-C65D1999291D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3EB0F2-185F-4867-B480-C65D1999291D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3EB0F2-185F-4867-B480-C65D1999291D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{545B6D09-100D-49A7-9ECC-8BF910705D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{545B6D09-100D-49A7-9ECC-8BF910705D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{545B6D09-100D-49A7-9ECC-8BF910705D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{545B6D09-100D-49A7-9ECC-8BF910705D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C30856-13D8-438E-85D0-CD553E7AABC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C30856-13D8-438E-85D0-CD553E7AABC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C30856-13D8-438E-85D0-CD553E7AABC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C30856-13D8-438E-85D0-CD553E7AABC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29B3E8FD-CF57-4E8A-8756-30ECA81801A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29B3E8FD-CF57-4E8A-8756-30ECA81801A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29B3E8FD-CF57-4E8A-8756-30ECA81801A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29B3E8FD-CF57-4E8A-8756-30ECA81801A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD0E51A7-A266-4B2E-B67B-53F182A03708}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+@OlymppMarketsAPI_HostAddress = http://localhost:5090
+
+GET {{OlymppMarketsAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

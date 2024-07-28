@@ -1,0 +1,24 @@
+[
+  {
+    "Name": "T-Shirt",
+    "Brand": "Olympp",
+    "Size": "S",
+    "Price": {
+      "Amount": 25.00
+    },
+    "Stock": {
+      "Quantity": 100
+    }
+  },
+  {
+    "Name": "Sweat",
+    "Brand": "Olympp",
+    "Size": "L",
+    "Price": {
+      "Amount": 60.00
+    },
+    "Stock": {
+      "Quantity": 50
+    }
+  }
+]
