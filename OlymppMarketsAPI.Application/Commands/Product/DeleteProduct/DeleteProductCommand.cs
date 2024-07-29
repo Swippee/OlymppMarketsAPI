@@ -7,5 +7,5 @@ using MediatR;
 
 namespace OlymppMarketsAPI.Application.Commands
 {
-    public record DeleteProductCommand (int Id) : IRequest<Unit> { }
+    public record DeleteProductCommand(int Id) : IRequest<Unit> { }
 }

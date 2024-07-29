@@ -3,11 +3,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using OlymppMarketsAPI.Application.Commands;
+using OlymppMarketsAPI.Application.Handlers;
 using OlymppMarketsAPI.Application.Mappings;
 using OlymppMarketsAPI.Application.Queries;
+using OlymppMarketsAPI.Application.Services;
 using OlymppMarketsAPI.Domain.Interfaces;
 using OlymppMarketsAPI.Infrastructure.Data;
 using OlymppMarketsAPI.Infrastructure.Repositories;
+using OlymppMarketsAPI.Infrastructure.Services;
 using System.Reflection;
 using System.Text;
 
@@ -24,13 +27,19 @@ builder.Services.AddDbContext<OlymppMarketsDbContext>(options =>
 // Add repositories
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+// Add services
+builder.Services.AddScoped<ITokenService, TokenService>();
+
 // Add AutoMapper
 builder.Services.AddAutoMapper(typeof(MappingProfile));
+
 // Add MediatR
 builder.Services.AddMediatR(cfg => {
     cfg.RegisterServicesFromAssemblies(
         Assembly.GetExecutingAssembly(),
-        typeof(UpdateProductCommandHandler).Assembly, 
+        typeof(UpdateProductCommandHandler).Assembly,
+        typeof(RegisterUserCommandHandler).Assembly,
         typeof(GetProductByIdQueryHandler).Assembly  
         );
 });

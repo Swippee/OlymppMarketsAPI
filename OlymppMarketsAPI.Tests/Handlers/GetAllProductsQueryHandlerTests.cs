@@ -6,7 +6,6 @@ using OlymppMarketsAPI.Application.Queries;
 using OlymppMarketsAPI.Domain.Entities;
 using OlymppMarketsAPI.Domain.Interfaces;
 using OlymppMarketsAPI.DTOs;
-using OlymppMarketsAPI.DTOs;
 using OlymppMarketsAPI.Infrastructure.Data;
 using OlymppMarketsAPI.Infrastructure.Repositories;
 using System.Collections.Generic;

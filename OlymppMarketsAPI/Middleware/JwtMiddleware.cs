@@ -29,8 +29,8 @@ namespace OlymppMarketsAPI.Middleware
         {
             try
             {
-                var jwtSettings = _configuration.GetSection("Jwt");
-                var key = Encoding.ASCII.GetBytes(jwtSettings["Key"]);
+                var jwtSettings = _configuration.GetSection("JwtSettings");
+                var key = Encoding.ASCII.GetBytes(jwtSettings["SecretKey"]);
 
                 var tokenHandler = new JwtSecurityTokenHandler();
                 var tokenValidationParameters = new TokenValidationParameters
@@ -50,13 +50,12 @@ namespace OlymppMarketsAPI.Middleware
                 if (validatedToken is JwtSecurityToken jwtToken)
                 {
                     var userName = principal.Identity.Name;
-                    context.Items["User"] = userName; // attach user to context on successful jwt validation
+                    context.Items["User"] = userName; 
                 }
             }
             catch
             {
-                // Do nothing if JWT validation fails
-                // User is not attached to context so request won't have access to secure routes
+               
             }
         }
     }

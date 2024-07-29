@@ -16,7 +16,7 @@ namespace OlymppMarketsAPI.Application.Queries
         private readonly IProductRepository _productRepository;
         private readonly IMapper _mapper;
 
-        public GetProductByIdQueryHandler(IProductRepository productRepository,IMapper mapper)
+        public GetProductByIdQueryHandler(IProductRepository productRepository, IMapper mapper)
         {
             _productRepository = productRepository;
             _mapper = mapper;
@@ -24,7 +24,7 @@ namespace OlymppMarketsAPI.Application.Queries
 
         public async Task<ProductDTO?> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
         {
-            var product= await _productRepository.GetProductByIdAsync(request.Id);
+            var product = await _productRepository.GetProductByIdAsync(request.Id);
             return _mapper.Map<ProductDTO>(product);
         }
     }

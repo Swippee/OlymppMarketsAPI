@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OlymppMarketsAPI.Application.Queries
 {
-    public record GetProductByIdQuery (int Id) : IRequest<ProductDTO?>
+    public record GetProductByIdQuery(int Id) : IRequest<ProductDTO?>
     {
     }
 }

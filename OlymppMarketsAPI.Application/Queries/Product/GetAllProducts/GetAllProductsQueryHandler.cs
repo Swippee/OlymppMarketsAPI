@@ -14,12 +14,12 @@ namespace OlymppMarketsAPI.Application.Queries
         public GetAllProductsQueryHandler(IProductRepository productRepository, IMapper mapper)
         {
             _productRepository = productRepository;
-            _mapper= mapper;
+            _mapper = mapper;
         }
 
         public async Task<List<ProductDTO>> Handle(GetAllProductsQuery request, CancellationToken cancellationToken)
         {
-            List<Product> products = (List<Product>)await _productRepository.GetAllProductsAsync();
+            List<Domain.Entities.Product> products = (List<Domain.Entities.Product>)await _productRepository.GetAllProductsAsync();
             return _mapper.Map<List<ProductDTO>>(products);
         }
     }

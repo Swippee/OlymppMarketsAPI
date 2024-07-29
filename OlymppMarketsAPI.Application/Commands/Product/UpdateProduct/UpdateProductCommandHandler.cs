@@ -5,7 +5,7 @@ using OlymppMarketsAPI.Domain.Interfaces;
 
 namespace OlymppMarketsAPI.Application.Commands
 {
-    public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand,Unit>
+    public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand, Unit>
     {
         private readonly IProductRepository _productRepository;
         private readonly IMapper _mapper;

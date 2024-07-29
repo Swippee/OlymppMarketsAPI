@@ -29,11 +29,6 @@ namespace OlymppMarketsAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProductById(int id)
         {
-            var userName = HttpContext.Items["User"]?.ToString();
-            if (string.IsNullOrEmpty(userName))
-            {
-                return Unauthorized();
-            }
             var query = new GetProductByIdQuery(id);
             var product = await _mediator.Send(query);
             return Ok(product);

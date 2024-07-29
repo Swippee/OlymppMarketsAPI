@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OlymppMarketsAPI.Application\OlymppMarketsAPI.Application.csproj" />
     <ProjectReference Include="..\OlymppMarketsAPI.Domain\OlymppMarketsAPI.Domain.csproj" />
     <ProjectReference Include="..\OlymppMarketsAPI.DTOs\OlymppMarketsAPI.DTOs.csproj" />
   </ItemGroup>
